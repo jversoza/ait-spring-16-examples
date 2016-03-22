@@ -30,6 +30,14 @@ Cat.find({}, function(err, cats, count){
     console.log(cats[0].name);
 })
 
+Cat = mongoose.model("Cat");
+var c = new Cat({
+    name: 'foo',
+    lives: 20,
+    cuteness:1000
+
+});
+
 c.save(function(err, savedCat, count) {
     console.log(err, savedCat, count);
 });
