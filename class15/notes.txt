@@ -1,0 +1,11 @@
+mongo ... 
+it can have multiple databases
+databases are a bunch of collections
+a collection is a bunch of objects or.... documents
+mongo->db->collection->document
+{name:value, ... etc.}
+mongod - database server <--- this has to be running to access your data
+mongo (no d) - database client
+moviesdb --> its own database
+actors --> collection {first:foo, last:bar}
+movie --> collection {title:free will 70}
