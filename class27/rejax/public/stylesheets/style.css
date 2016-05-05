@@ -1,0 +1,22 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#filterForm {
+	border: 1px solid #aaa;
+}
+
+#filterForm, ul {
+	padding: 1em;
+	margin: 1em;
+	width: 500px;
+}
+
+li {
+	padding: 0.5em;
+}

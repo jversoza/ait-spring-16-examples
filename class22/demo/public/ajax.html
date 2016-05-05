@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+<title></title>
+</head>
+<body>
+		<button>Kind of Magic!!!</button>
+<script>
+var button = document.querySelector('button');
+button.addEventListener('click', function() {
+var req = new XMLHttpRequest();
+req.open('GET', 'http://localhost:3000/hello.json');
+req.addEventListener('load', function() {
+		console.log(req.responseText);
+		// not evt.responseText
+		if(req.status == 200) {
+				var messages = JSON.parse(req.responseText);
+				messages.forEach(function(msg) {
+						document.body.appendChild(document.createTextNode(msg.message));	
+				});
+
+		}
+});
+req.addEventListener('error', function() {
+		console.log('error');
+
+});
+req.send();
+});
+</script>
+</body>
+</head>
+</html>

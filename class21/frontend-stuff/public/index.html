@@ -1,0 +1,48 @@
+<!DOCTYPE htmlo>
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" href="stylesheets/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+		<h1>hello</h1>
+		<h1 id="seeya">bye</h1>
+		<div>new line</div>
+		<em>this is italics</em>
+		<a>goes nowhere</a>
+
+		<script>
+
+document.addEventListener("DOMContentLoaded", main);
+
+
+function main() {
+	alert('called main');
+	var left_pos = 0;
+	var ele = document.querySelector('#seeya')
+	ele.style.position = 'relative';
+	//ele.addEventListener('click', animate);
+	ele.addEventListener('click', changeClass);
+
+	function changeClass(event) {
+		// this refers to element clicked!
+		this.classList.toggle('highlight');
+		alert(event.x);
+		alert(event.y);
+		// ele.style.backgroundColor = 'yellow';
+	}
+
+	function animate() {
+			document.body.appendChild(document.createTextNode('SURPRISE!!!!!'));
+			ele.style.left = left_pos + 'px'
+					left_pos += 2;
+			if(left_pos < 300) {
+					window.requestAnimationFrame(animate);
+			}
+	}
+}
+		</script>
+</body>
+</head>
+</html>
+

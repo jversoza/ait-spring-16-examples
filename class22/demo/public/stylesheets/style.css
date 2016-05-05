@@ -1,0 +1,9 @@
+body {
+}
+#content {
+	border: 5px solid red;
+}
+
+div#content {
+	border: 5px solid green;
+}

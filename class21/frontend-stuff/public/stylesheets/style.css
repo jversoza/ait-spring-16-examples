@@ -1,0 +1,15 @@
+* {
+	border: 1px solid #000;
+}
+h1 {
+}
+
+.highlight {
+	background-color: yellow;
+}
+
+#seeya {
+}
+a, em {
+	height: 5em;
+}

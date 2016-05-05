@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+<title></title>
+</head>
+<body>
+<form method="POST" action="">
+		foo: <input type="text" name="foo">	
+		<input type="submit">	
+</form>
+<script>
+var submitButton = document.querySelector('input[type="submit"]');
+console.log(submitButton);
+submitButton.addEventListener('click', function(evt) {
+
+	var textInput = document.querySelector('input[name="foo"]');
+	evt.preventDefault();
+	console.log(textInput.value);
+});
+</script>
+</body>
+</head>
+</html>

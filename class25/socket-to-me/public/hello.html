@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+<title></title>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+var socket = io();
+
+document.addEventListener("DOMContentLoaded", init);
+function init() {
+document.body.addEventListener("click", function(evt) {
+	console.log("logging");
+	socket.emit("my awesome event", [1, 2, 3]);
+});
+}
+</script>
+</head>
+<body>
+		yup do that!
+
+</body>
+</head>
+</html>

@@ -1,0 +1,27 @@
+How do we redeploy (incorporate further changes)?
+=====
+1. rm -r directory that project is in
+2. re clone
+3. change db.js
+
+
+Not great, but also works
+=====
+1. gitignore your db.js
+2. recreate it everytime on server (if there are changes to it)
+3. otherwise just git pull
+
+Want to not do 3 steps? And just do 1?
+=====
+for db.js (permanently)
+
+1. set an environment variable before you run (will be NODE_ENV)
+2. process.env.NODE_ENV
+3. if ^^^ == develeopment... then use localhost without password
+4. otherwise... require...
+5. NODE_ENV=productiong`
+
+
+
+
+

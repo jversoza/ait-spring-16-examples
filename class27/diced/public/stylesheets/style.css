@@ -1,0 +1,18 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.die {
+	box-model: content-box;
+	width: 3em;
+	height: 3em;
+	padding: 1em;
+	font-size: 2em;
+	border: 1px solid #000;
+	display: inline-block;
+}
